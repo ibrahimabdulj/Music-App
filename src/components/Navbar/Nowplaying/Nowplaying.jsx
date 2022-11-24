@@ -27,7 +27,7 @@ function Nowplaying() {
     play: null,
     pause: null,
     currentTime: 0,
-    duration: 0
+    duration: 0,
   });
 
   return (
