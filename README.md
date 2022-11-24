@@ -1,12 +1,26 @@
 # Getting Started with My Music
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Below are screenshots of the project UI and setup Instructions:
+## Home
+![Home](./public/assets/Screenshot-8.png)
 
-## Available Scripts
+## Tracks
 
-In the project directory, you can run:
+![Tracks](./public/assets/Screenshot-4.png) 
 
+## Favourites
+![Favourites](./public/assets/Screenshot-5.png)
+## Project Setup instructions
+- Clone the project
+- Open your terminal and cd into the project directory
+- Run the following commands below:
+
+Step 1 (Installing all project dependencies):
+### `npm install`
+
+Step 2 (Running the App):
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
