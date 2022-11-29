@@ -4,7 +4,8 @@ export const Controls = styled.div`
   align-items: center;
   width: 90%;
   background: #2d2c2d;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
 `;
 export const AudioSource = styled.audio``;
 export const ForwardBackward = styled.button`

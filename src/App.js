@@ -2,8 +2,8 @@ import React, { createContext, useState } from "react";
 import GlobalStyle from "./globalStyles";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import NowPlaying from "./pages/NowPlaying";
 import Favourites from "./pages/Favourites";
-import Files from "./pages/Files";
 import User from "./pages/User";
 import Tracks from "./pages/Tracks";
 import LikedMusic from "./pages/LikedMusic";
@@ -19,12 +19,12 @@ const router = createBrowserRouter([
     element: <Favourites />,
   },
   {
-    path: "/files",
-    element: <Files />,
+    path: "/tracks",
+    element: <Tracks/>,
   },
   {
-    path: "/tracks",
-    element: <Tracks />,
+    path: "/nowplaying",
+    element: <NowPlaying/>,
   },
   {
     path: "/user",

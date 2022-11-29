@@ -20,7 +20,7 @@ export const Head = styled.header`
   justify-self: flex-end;
   justify-content: space-between;
   margin-left: 40vw;
-  margin-bottom:5px;
+  margin-bottom: 5px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background: #969e96f8;
@@ -35,14 +35,14 @@ export const AddCompo = styled.div`
   border-bottom-right-radius: 10px;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 5px; 
+  padding-right: 5px;
   background: #d4cfcf;
 `;
 
 export const MusicDisplays = styled.div`
   width: 85%;
   height: 20%;
-  border-radius:2px;
+  border-radius: 2px;
   overflow: hidden;
   display: flex;
   gap: 2px;
@@ -52,13 +52,9 @@ export const MusicDisplays = styled.div`
 
 export const TrackDisplayWrapper = styled.div`
   width: 95%;
-  height: 90%;
-  background: url("https://live.staticflickr.com/7255/7840934596_eca6c9081d_b.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: 60% 90%;
-  overflow: hidden;
+  height: 70%;
+  border: 5px solid black;
+  overflow: hidden; 
   border-radius: 20px;
   margin-top: 10px;
   display: flex;
@@ -70,4 +66,19 @@ export const TrackDisplayWrapper = styled.div`
     color: white;
   }
 `;
-
+export const CurrentPlayImgWrap = styled.div`
+  width: 200px;
+  height: 600px;
+  margin-top: 30px;
+  border-radius:2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const CurrentPlayImg = styled.img`
+  width: 150px;
+  background-repeat: no-repeat;
+  position: center;
+  background-attachment: fixed;
+`;

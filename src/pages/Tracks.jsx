@@ -1,5 +1,5 @@
 import React, {useState, createContext} from 'react'
-import {Container} from '../globalStyles';
+import { Containers, Head} from '../globalStyles';
 import Navbar from '../components/Navbar/Navbar';
 import Track from '../components/Navbar/Tracks/Tracks';
 export const MusicCtx = createContext();
@@ -16,13 +16,15 @@ function Tracks() {
      pause: null,
    });
   return (
-    <MusicCtx.Provider value={{songData, setSongData}}>
-      <Container>
+    <MusicCtx.Provider value={{ songData, setSongData }}>
+      <Head>
+        <h1>Tracks</h1>
+      </Head>
+      <Containers>
         <Navbar />
         <Track />
-      </Container>
+      </Containers>
     </MusicCtx.Provider>
-
   );
 }
 

@@ -36,14 +36,14 @@ function Navbar() {
             <HomeIcon key={index} title="Home" >{el.icon}</HomeIcon>
           ))}
         </Link> 
-      <Link to='/tracks' >
+      <Link to='/nowplaying' >
         {MusicIonData.map((el, index) => (
-          <MusicIcons key={index} title="Musics" >{el.icon}</MusicIcons>
+          <MusicIcons key={index} title="NowPlaying" >{el.icon}</MusicIcons>
         ))}
       </Link>
-      <Link to = "/files">
+      <Link to = "/tracks">
         {FilesIconData.map((el, index) => (
-          <Files key={index} title="Files">{el.icon}</Files>
+          <Files key={index} title="Musics">{el.icon}</Files>
         ))}
       </Link>
       <Link to= "/user" >

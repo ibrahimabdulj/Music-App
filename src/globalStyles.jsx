@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0px;
   }
   body{
-  background: url('https://www.tauntonschool.co.uk/wp-content/uploads/2021/03/shutterstock_Music-Festival.jpg');
+  // background: url('https://www.tauntonschool.co.uk/wp-content/uploads/2021/03/shutterstock_Music-Festival.jpg');
+  background:#9E9CDD;
   }
   h2{
     width:fit-content;
@@ -15,8 +16,22 @@ const GlobalStyle = createGlobalStyle`
   .active {
   background: #cac8c8;
 }
+@media screen and (min-width: 700px){
+  font-size: smaller;
+}
 `;
 export const Container = styled.div`
+  height: 85vh;
+  width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  margin-top: 5vw;
+  background: #060e1d;
+  border-radius: 20px;
+  display: flex;
+`;
+export const Containers = styled.div`
   height: 85vh;
   width: 70vw;
   margin-right: auto;

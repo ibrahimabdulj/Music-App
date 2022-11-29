@@ -33,6 +33,7 @@ function SongCard({ bg, source, index }) {
       setSongData({
         songId: source,
         songSource: source,
+        bg: bg,
         songRef: audioPlayer,
         isPlaying: true,
         songIndex: index,
@@ -41,7 +42,6 @@ function SongCard({ bg, source, index }) {
       });
     }
   };
-
 
   return (
     <Indivsong background={bg}>

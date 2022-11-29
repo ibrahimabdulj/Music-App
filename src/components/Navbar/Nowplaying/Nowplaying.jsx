@@ -6,6 +6,8 @@ import {
   TrackDisplayWrapper,
   Head,
   AddCompo,
+  CurrentPlayImg,
+  CurrentPlayImgWrap,
 } from "./NowPlayingStyles";
 // import {sliderSettings} from "../../../data/AudioData";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -21,6 +23,7 @@ function Nowplaying() {
   const [songData, setSongData] = useState({
     songRef: null,
     songId: null,
+    bg: null,
     songSource: null,
     songIndex: null,
     isPlaying: false,
@@ -31,33 +34,33 @@ function Nowplaying() {
   });
 
   return (
-    <SongCtx.Provider value={{songData, setSongData}}>
+    <SongCtx.Provider value={{ songData, setSongData }}>
       <NowPlayingSection>
-      <Head>
-        <h2>Next Composition</h2>
-        <AddCompo>
-          <AiOutlinePlus />
-        </AddCompo>
-      </Head>
-      <MusicDisplays>
-        {audios.map((el, index) => (
-          <SongCard
-            setSongId={setSongId}
-            songId={songId}
-            setSongData={setSongData}
-            source={el.src}
-            key={index}
-            index={index}
-            bg={el.thumbnail}
-          />
-        ))}
-      </MusicDisplays>
-      <TrackDisplayWrapper>
-        <MusicCard 
-          songId={songId} 
-          songData={songData}
-        />
-      </TrackDisplayWrapper>
+        <Head>
+          <h2>Next Composition</h2>
+          <AddCompo>
+            <AiOutlinePlus />
+          </AddCompo>
+        </Head>
+        <MusicDisplays>
+          {audios.map((el, index) => (
+            <SongCard
+              setSongId={setSongId}
+              songId={songId}
+              setSongData={setSongData}
+              source={el.src}
+              key={index}
+              index={index}
+              bg={el.thumbnail}
+            />
+          ))}
+        </MusicDisplays>
+        <TrackDisplayWrapper>
+            <CurrentPlayImgWrap>
+              <CurrentPlayImg src={songData?.bg} />
+            </CurrentPlayImgWrap>
+          <MusicCard songId={songId} songData={songData} />
+        </TrackDisplayWrapper>
       </NowPlayingSection>
     </SongCtx.Provider>
   );
