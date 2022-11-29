@@ -37,7 +37,7 @@ export const InputName = styled.input`
   font-size: 1.6rem;
 `;
 export const Submit = styled.button`
-  width: 80%;
+  width: 500px;
   height: 35px;
   border-radius: 20px;
   margin-top: 30px;
